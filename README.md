@@ -1,5 +1,5 @@
 # MyApp
-[![Netlify Status](https://api.netlify.com/api/v1/badges/7e3bbc81-f659-41ab-ba43-037bb5c538e8/deploy-status)](https://app.netlify.com/sites/vigilant-northcutt-9c9b2c/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bd429619-cdb2-470b-afe8-d5ab76868770/deploy-status)](https://app.netlify.com/sites/boring-curran-22126e/deploys)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
