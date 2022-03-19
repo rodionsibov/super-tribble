@@ -1,5 +1,6 @@
 <div class="md:w-2/3 w-11/12 rounded p-6 sm:p-10 mx-auto mt-10 bg-white shadow-lg">
   <div class="space-y-8">
+    <p class="text-sm opacity-30 hover:opacity-60 text-right">{{ currentDate | date }}</p>
     <h1 class="text-3xl text-center my-6 sm:my-2 mb-10">Team <span class="font-bold">Generator</span></h1>
     <ul class="p-4 bg-slate-100 rounded overflow-auto" style="height: 200px;">
       <li *ngFor="let member of members">
