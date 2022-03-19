@@ -10,6 +10,7 @@ export class AppComponent {
   members: string[] = []
   errorMessage = ''
   numberOfTeams: number | '' = ''
+  teams: string[][] = []
 
   onInput(member: string) {
     this.newMemberName = member
@@ -17,6 +18,19 @@ export class AppComponent {
 
   onNumberOfTeamsInput(value: string) {
     this.numberOfTeams = Number(value)
+  }
+
+  generateTeams() {
+    if (!this.numberOfTeams || this.numberOfTeams <= 0) {
+      return
+    }
+
+    const allMembers = [...this.members]
+
+    for (let i = 0; i < this.numberOfTeams; i++) {
+      const randomIndex = Math.floor(Math.random() * allMembers.length)
+      const member = allMembers.splice(randomIndex, 1)[0]
+    }
   }
 
   addMember() {
