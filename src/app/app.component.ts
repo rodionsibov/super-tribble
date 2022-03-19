@@ -9,7 +9,7 @@ export class AppComponent {
   newMemberName = ''
   members: string[] = []
   errorMessage = ''
-  numberOfTeams = 0
+  numberOfTeams: number | '' = ''
 
   onInput(member: string) {
     this.newMemberName = member
