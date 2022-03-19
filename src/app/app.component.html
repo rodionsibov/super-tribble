@@ -3,7 +3,7 @@
     <h1 class="text-3xl text-center my-6 sm:my-2 mb-10">Team <span class="font-bold">Generator</span></h1>
     <ul class="p-4 bg-slate-100 rounded overflow-auto" style="height: 200px;">
       <li *ngFor="let member of members">
-        {{member}}
+        {{ member }}
       </li>
     </ul>
     <div class="space-y-4">
@@ -24,11 +24,6 @@
   </div>
 </div>
 
-<div class="md:w-2/3 w-11/12 rounded mx-auto my-10">
-  <div>
-    <h2 class="text-2xl mb-1 text-white">team 3</h2>
-    <ul class="rounded p-2 bg-white">
-      <li>Harb</li>
-    </ul>
-  </div>
+<div *ngIf="teams.length" class="md:w-2/3 w-11/12 rounded mx-auto my-10">
+  <app-team *ngFor="let team of teams; let i = index" [team]="team" [index]="i"></app-team>
 </div>
