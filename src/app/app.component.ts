@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   newMemberName = ''
-  members: string[] = ['sfsdfs', 'sdfsdfds']
+  members: string[] = ['Angular', 'Ionic', 'React', 'Vue', 'Fluter']
   errorMessage = ''
   numberOfTeams: number | '' = ''
   teams: string[][] = []
