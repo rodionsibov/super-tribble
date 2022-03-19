@@ -9,9 +9,14 @@ export class AppComponent {
   newMemberName = ''
   members: string[] = []
   errorMessage = ''
+  numberOfTeams = 0
 
   onInput(member: string) {
     this.newMemberName = member
+  }
+
+  onNumberOfTeamsInput(value: string) {
+    this.numberOfTeams = Number(value)
   }
 
   addMember() {
@@ -25,4 +30,5 @@ export class AppComponent {
     this.members.push(this.newMemberName)
     this.newMemberName = ''
   }
+
 }
